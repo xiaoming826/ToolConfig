@@ -1,0 +1,13 @@
+[user]
+	name = xiaoming-vinci
+	email = xiaoming@vinci.im
+[push]
+        default = current
+[core]
+	excludesfile = /Users/xiaoming/.gitignore_global
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
