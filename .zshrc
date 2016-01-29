@@ -57,8 +57,9 @@ ZSH_THEME="robbyrussell"
 plugins=(git)
 
 # User configuration
+export GIT_HOME=/usr/local/Cellar/git/2.7.0/bin
+export PATH=$HOME/bin:/usr/local/bin:$PATH:$GIT_HOME
 
-export PATH=$HOME/bin:/usr/local/bin:$PATH
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
